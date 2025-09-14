@@ -6,6 +6,15 @@ class Temp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Heading(text: "Hello Flutter!");
+    final EdgeInsetsGeometry padding = const EdgeInsets.all(16.0);
+    return Scaffold(
+      appBar: AppBar(title: Text('Temp')),
+      body: SafeArea(
+        child: Padding(
+          padding: padding,
+          child: Heading(text: "Hello Flutter!"),
+        ),
+      ),
+    );
   }
 }
