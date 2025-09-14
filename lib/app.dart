@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_starter/pages/home.dart';
+import 'package:flutter_starter/pages/temp.dart';
 
 class App extends StatelessWidget {
   final EdgeInsetsGeometry padding = const EdgeInsets.all(16.0);
@@ -13,7 +13,7 @@ class App extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(title: Text('Home')),
         body: SafeArea(
-          child: Padding(padding: padding, child: Home()),
+          child: Padding(padding: padding, child: Temp()),
         ),
       ),
     );
