@@ -8,7 +8,13 @@ class App extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'My Flutter App',
-      theme: ThemeData(primarySwatch: Colors.blue),
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        textTheme: Theme.of(context).textTheme.apply(
+          bodyColor: Color(0xff284a79),
+          displayColor: Colors.red,
+        ),
+      ),
       home: Temp(),
     );
   }
