@@ -9,12 +9,7 @@ class Temp extends StatelessWidget {
     final EdgeInsetsGeometry padding = const EdgeInsets.all(16.0);
     return Scaffold(
       appBar: AppBar(title: Text('Temp')),
-      body: SafeArea(
-        child: Padding(
-          padding: padding,
-          child: Heading(text: "Hello Flutter!"),
-        ),
-      ),
+      body: Padding(padding: padding, child: ClipPath()),
     );
   }
 }
